@@ -4,7 +4,6 @@ import math
 import streamlit as st
 import base64
 import plotly.express as px
-# streamlit run "d:\.Repo\Project Repo\DS Project --- Chatbot_THPTQG_2023\chatbot.py"
 
 # Background
 df = px.data.iris()
@@ -55,7 +54,7 @@ sbd_str = st.text_input("Nhập số báo danh của bạn")
 
 # MAIN
 # Khai báo
-df = pd.read_csv("D:\\.Repo\\Project Repo\\DS Project --- Chatbot_THPTQG_2023\\diem_thi_thpt_2023.csv")
+df = pd.read_csv("D:\\.Repo\\Project Repo\\DS Project --- Chatbot_THPTQG_2023\\diem_thi_thpt_2023.csv", dtype={'sbd': str})
 df.columns = ['sbd','toan','van','nn','ly','hoa','sinh','su','dia','gdcd','ma_nn']
 df['KHTN'] = df['ly'] + df['hoa'] + df['sinh']
 df['KHXH'] = df['su'] + df['dia'] + df['gdcd']
@@ -82,9 +81,9 @@ for i in range(len(sbd)):
 
 
 try:
-    tmp = index
     # Tránh in xấu
     if sbd_str != "":
+        tmp = index
         st.write("Điểm thi thành phần của bạn là:")
         m1, m2, m3, m4, m5, m6, m7, m8, m9 = st.columns(9)
         with m1:
@@ -491,7 +490,7 @@ try:
                 diem_cua_thi_sinh = df['toan'].loc[index] + df['KHXH'].loc[index] + df['N2'].loc[index]
                 df['D99'] = df['toan'] + df['KHXH'] + df['N2']
             else:
-                print("Khối thi của bạn không được hỗ trợ tính toán hoặc bạn nhập sai khối thi. Bạn có muốn nhập lại không?")
+                st.write("Khối thi của bạn không được hỗ trợ tính toán hoặc bạn nhập sai khối thi. Bạn hãy chọn khối thi khác.")
 
 
 
