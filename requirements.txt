@@ -1,5 +1,3 @@
 pandas
 matplotlib
-math
-base64
 plotly
