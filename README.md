@@ -1,4 +1,4 @@
-# DS-Project---Chatbot-looking-up-test-scores-and-ranking-in-Vietnam-National-High-School-Exam-2023
+# DS-Project---Look-up-test-scores-and-ranking-in-Vietnam-National-High-School-Exam-2023
 
 Project này là chatbot tra cứu điểm thi Kỳ thi THPTQG 2023
 
