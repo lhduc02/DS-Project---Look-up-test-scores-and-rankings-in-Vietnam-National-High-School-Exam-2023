@@ -68,7 +68,11 @@ df['N6'] = df[df['ma_nn'] == 'N6']['nn']
 df['N7'] = df[df['ma_nn'] == 'N7']['nn']
 
 df['sbd'] = df['sbd'].astype(str)
-tinh = ['THÀNH PHỐ HÀ NỘI', 'THÀNH PHỐ HỒ CHÍ MINH', 'THÀNH PHỐ HẢI PHÒNG', 'THÀNH PHỐ ĐÀ NẴNG', 'TỈNH HÀ GIANG', 'TỈNH CAO BẰNG', 'TỈNH LAI CHÂU', 'TỈNH LÀO CAI', 'TỈNH TUYÊN QUANG', 'LẠNG SƠN', 'TỈNH BẮC KẠN', 'TỈNH THÁI NGUYÊN', 'TỈNH YÊN BÁI', 'TỈNH SƠN LA', 'TỈNH PHÚ THỌ', 'TỈNH VĨNH PHÚC', 'TỈNH QUẢNG NINH', 'TỈNH BẮC GIANG', 'TỈNH BẮC NINH', 'TỈNH HẢI DƯƠNG', 'TỈNH HƯNG YÊN', 'TỈNH HÒA BÌNH', 'TỈNH HÀ NAM', 'TỈNH NAM ĐỊNH', 'TỈNH THÁI BÌNH', 'TỈNH NINH BÌNH', 'TỈNH THANH HÓA', 'TỈNH NGHỆ AN', 'TỈNH HÀ TĨNH', 'TỈNH QUẢNG BÌNH', 'TỈNH QUẢNG TRỊ', 'TỈNH THỪA THIÊN-HUẾ', 'TỈNH QUẢNG NAM', 'TỈNH QUẢNG NGÃI', 'TỈNH KON TUM', 'TỈNH BÌNH ĐỊNH', 'TỈNH GIA LAI', 'TỈNH PHÚ YÊN', 'TỈNH ĐĂK LĂK', 'TỈNH KHÁNH HÒA', 'TỈNH LÂM ĐỒNG', 'TỈNH BÌNH PHƯỚC', 'TỈNH BÌNH DƯƠNG', 'TỈNH NINH THUẬN', 'TỈNH TÂY NINH', 'TỈNH BÌNH THUẬN', 'TỈNH ĐỒNG NAI', 'TỈNH LONG AN', 'TỈNH ĐỒNG THÁP', 'TỈNH AN GIANG', 'TỈNH BÀ RỊA-VŨNG TÀU', 'TỈNH TIỀN GIANG', 'TỈNH KIÊN GIANG', 'THÀNH PHỐ CẦN THƠ', 'TỈNH BẾN TRE', 'TỈNH VĨNH LONG', 'TỈNH TRÀ VINH', 'TỈNH SÓC TRĂNG', 'TỈNH BẠC LIÊU', 'TỈNH CÀ MAU', 'TỈNH ĐIỆN BIÊN', 'TỈNH ĐĂK NÔNG', 'TỈNH HẬU GIANG']
+tinh = ['THÀNH PHỐ HÀ NỘI', 'THÀNH PHỐ HỒ CHÍ MINH', 'THÀNH PHỐ HẢI PHÒNG', 'THÀNH PHỐ ĐÀ NẴNG', 'TỈNH HÀ GIANG', 'TỈNH CAO BẰNG', 'TỈNH LAI CHÂU', 'TỈNH LÀO CAI', 'TỈNH TUYÊN QUANG', 'TỈNH LẠNG SƠN', 'TỈNH BẮC KẠN', 'TỈNH THÁI NGUYÊN', 'TỈNH YÊN BÁI', 'TỈNH SƠN LA', 
+        'TỈNH PHÚ THỌ', 'TỈNH VĨNH PHÚC', 'TỈNH QUẢNG NINH', 'TỈNH BẮC GIANG', 'TỈNH BẮC NINH', 'TỈNH HẢI DƯƠNG', 'TỈNH HƯNG YÊN', 'TỈNH HÒA BÌNH', 'TỈNH HÀ NAM', 'TỈNH NAM ĐỊNH', 'TỈNH THÁI BÌNH', 'TỈNH NINH BÌNH', 'TỈNH THANH HÓA', 'TỈNH NGHỆ AN', 'TỈNH HÀ TĨNH', 
+        'TỈNH QUẢNG BÌNH', 'TỈNH QUẢNG TRỊ', 'TỈNH THỪA THIÊN-HUẾ', 'TỈNH QUẢNG NAM', 'TỈNH QUẢNG NGÃI', 'TỈNH KON TUM', 'TỈNH BÌNH ĐỊNH', 'TỈNH GIA LAI', 'TỈNH PHÚ YÊN', 'TỈNH ĐĂK LĂK', 'TỈNH KHÁNH HÒA', 'TỈNH LÂM ĐỒNG', 'TỈNH BÌNH PHƯỚC', 'TỈNH BÌNH DƯƠNG', 
+        'TỈNH NINH THUẬN', 'TỈNH TÂY NINH', 'TỈNH BÌNH THUẬN', 'TỈNH ĐỒNG NAI', 'TỈNH LONG AN', 'TỈNH ĐỒNG THÁP', 'TỈNH AN GIANG', 'TỈNH BÀ RỊA-VŨNG TÀU', 'TỈNH TIỀN GIANG', 'TỈNH KIÊN GIANG', 'THÀNH PHỐ CẦN THƠ', 'TỈNH BẾN TRE', 'TỈNH VĨNH LONG', 'TỈNH TRÀ VINH', 
+        'TỈNH SÓC TRĂNG', 'TỈNH BẠC LIÊU', 'TỈNH CÀ MAU', 'TỈNH ĐIỆN BIÊN', 'TỈNH ĐĂK NÔNG', 'TỈNH HẬU GIANG']
 
 
 sbd = df['sbd'].to_list()
@@ -496,7 +500,9 @@ try:
 
             df = df[['sbd', khoi]]
 
-            vi_tri_dau_tien = [0,102095,186946,209669,222802,229088,234134,237972,245838,80000,99999,266500,282653,290888,302661,318535,332577,348602,369682,386406,408340,423726,433416,443051,463456,484301,495450,531930,186946,586065,597233,605646,618675,635872,649742,654770,673667,688528,209669,720236,734723,749410,760340,774558,780679,790908,803808,836966,222802,868297,888239,901164,916619,931042,943103,955220,965655,974851,229088,991278,1001054,1007739,1015123,1022060]# vị trí đầu tiên theo tỉnh thành
+            vi_tri_dau_tien = [0,102095,186946,209669,222802,229088,234134,237972,245838,80000,99999,266500,282653,290888,302661,318535,332577,348602,369682,386406,408340,423726,433416,443051,463456,484301,495450,531930,186946,586065,
+                               597233,605646,618675,635872,649742,654770,673667,688528,209669,720236,734723,749410,760340,774558,780679,790908,803808,836966,222802,868297,888239,901164,916619,931042,943103,955220,965655,974851,229088,
+                               991278,1001054,1007739,1015123,1022060] # vị trí (số báo danh) đầu tiên theo tỉnh thành
 
             # Xác định mã tỉnh
             if len(sbd_str) == 7:
@@ -538,5 +544,4 @@ try:
 
 except:
     st.write("Bạn nhập sai số báo danh hoặc số báo danh không tồn tại trong dữ liệu của Bộ GD&ĐT. Mời bạn nhập lại.")
-
 
